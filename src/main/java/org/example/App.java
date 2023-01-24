@@ -4,9 +4,18 @@ public class App
 {
     public static void main( String[] args )
     {
-        String str = "Hello !!!";
+       int a = 111;
+       int b = 222;
+       System.out.println("Было:");
+       System.out.println("a="+a+ " b="+b);
 
-        System.out.println( "Hello World!" );
-        System.out.println(str);
+       // хитрый способ без третьей переменной ;)
+        a=b+a;
+        b=a-b;
+        a=a-b;
+
+        System.out.println("\nСтало:");
+        System.out.println("a="+a+ " b="+b);
+
     }
 }
