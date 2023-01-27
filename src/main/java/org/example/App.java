@@ -17,7 +17,7 @@ public class App
         System.out.println("a=" + a + " b=" + b);
         System.out.println("-------------------------------------");
 
-        byte m=30;
+        byte m=32;
         System.out.println(m+"-й член последовательности Фибоначчи: "+fibonazzi(m));
     }
         public static long fibonazzi(byte n){
