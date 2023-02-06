@@ -1,7 +1,5 @@
 package org.example;
 
-import java.sql.SQLOutput;
-
 public class App {
     public static void main(String[] args) {
         int a = 111;
@@ -68,7 +66,7 @@ public class App {
         }
     }
 
-    public static int sumDigit(int num){
+    public static int sumDigits(int num){
         int sum = 0;
         while (num > 0) {
             sum = sum + num % 10;
@@ -78,11 +76,11 @@ public class App {
     }
 
     public static byte maxDigitsSumPosition(int[] arr){
-        int max=sumDigit(arr[0]);
+        int max= sumDigits(arr[0]);
         byte i_max=0;
         for (byte i=1; i<arr.length; i++) {
-            if (sumDigit(arr[i])>=max) {
-                max=sumDigit(arr[i]);
+            if (sumDigits(arr[i])>=max) {
+                max= sumDigits(arr[i]);
                 i_max=i;
             }
         }
