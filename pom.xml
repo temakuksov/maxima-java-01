@@ -4,7 +4,7 @@
 
   <groupId>org.example</groupId>
   <artifactId>maxima-java-01</artifactId>
-  <version>1.4</version>
+  <version>1.5</version>
   <packaging>jar</packaging>
 
   <name>maxima-java-01</name>
