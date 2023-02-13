@@ -60,11 +60,16 @@ public class App {
         if (n > 2) {
             int i = 2;
             int d = 0;
-            while ((i < n) & (d == 0)) {
+            while ((i*i<=n) && (d==0)) {
                 if (n % i == 0) {
                     d = i;
                 }
-                i++;
+                if (i < 6) {
+                    i += 1;
+                }
+                if (i >= 6) {
+                    i = 6 * (i - 5) + 1;
+                }
             }
             return d;
         } else {
